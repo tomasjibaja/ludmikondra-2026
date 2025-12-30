@@ -1,7 +1,7 @@
 export default function MachuPichuInfo () {
   return (
     <div className="flex items-center justify-center bg-white h-screen overflow-hidden">
-      <img className="w-1/2" src='./machu-pichu-casa.jpg' alt='machu-pichu' />
+      <img className="w-1/2" src='./machu-lu2-cropped.jpg' alt='machu-pichu' />
       <div className="relative h-full flex flex-col items-center justify-center gap-4 px-30 py-20 text-leaf-green text-md">
         <h3 className="font-bold text-2xl mb-10">EL LLAMADO DE LA TIERRA</h3>
         <b>En lo alto de las montañas sagradas, donde la Tierra late con fuerza ancestral y el tiempo parece detenerse, se abre un portal de reconexión profunda. </b>
