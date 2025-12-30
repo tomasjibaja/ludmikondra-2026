@@ -3,11 +3,11 @@ import Button from '../components/Button'
 export default function Home() {
   return (
     <div className="relative flex flex-col min-h-screen max-w-screen items-center justify-top bg-white font-sans overflow-hidden cursor-default">
-      <h1 className="absolute top-0 text-dark-green text-2xl m-10 font-light duration-500 hover:font-medium">
+      <h1 className="absolute w-screen pl-10 top-0 text-dark-green text-2xl m-10 font-light duration-500 hover:font-medium">
         Bhakti Devi Viajes
       </h1>
-      <div className="hero-container max-h-screen overflow-hidden">
-        <img className="w-full" src="./machu-pichu-ciudad.jpg" alt="machu-pichu"/>
+      <div className="w-screen hero-container max-h-screen overflow-hidden">
+        <img className="w-full object-cover" src="./machu-landing.png" alt="machu-pichu"/>
       </div>
       <div className="absolute text-9xl top-1/3 flex flex-col items-center justify-center">
         <span className="font-hammersmith text-lima text-shadow-lg duration-500 hover:brightness-75">
