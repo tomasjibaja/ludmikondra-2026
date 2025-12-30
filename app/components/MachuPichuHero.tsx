@@ -20,7 +20,7 @@ export default function Home() {
       </div>
       <div className="w-screen p-2 bg-lima h-1/5 absolute bottom-0 flex items-center justify-evenly flex-col">
         <span className="max-w-2/3 text-dark-green text-center text-xl">Viví un viaje para mujeres que buscan conectar con la sanación de la naturaleza</span>
-        <Button variant='dark'>Inscribirme</Button>
+        <Button variant={'dark'}>Inscribirme</Button>
       </div>
     </div>
   );
