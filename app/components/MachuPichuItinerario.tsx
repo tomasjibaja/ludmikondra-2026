@@ -12,9 +12,11 @@ export default function MachuPichuItinerario () {
       <div className="grid grid-cols-5 gap-7 p-20">
         {destinos.map((destino, index) => {
           return (
-            <div className=" flex flex-col items-center justify-center" key={index}>
-              <img src={`${destino.src}`} alt="imagen de itinerario" />
-              <span className="text-xl font-medium font-hammersmith">{destino.title}</span>
+            <div className="h-65 flex flex-col items-center justify-between" key={index}>
+              <img className='h-50 w-full object-cover border-1 border-lima duration-700 hover:brightness-125' src={`${destino.src}`} alt="imagen de itinerario" />
+              <div className='flex items-center justify-center w-full h-15'>
+                <span className="max-w-4/5 text-md font-medium font-hammersmith text-center">{destino.title}</span>
+              </div>
             </div>
           )
         })}
