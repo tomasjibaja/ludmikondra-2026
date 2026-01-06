@@ -6,7 +6,7 @@ const destinos = [
   { src: '/destinos/ollanta.jpg', title: 'OLLANTAYTAMBO' },
   { src: '/destinos/marasmorai.webp', title: 'MARAS-MORAY' },
   { src: '/destinos/sacsayhuaman.jpg', title: 'SACSAYHUAMAN' },
-  { src: '/destinos/uros.jpg', title: 'ISLA DE LOS UROS & AMANTANI' },
+  { src: '/destinos/uros.jpg', title: 'ISLA DE UROS & AMANTANI' },
   { src: '/destinos/taquille.jpg', title: 'ISLA DE TAQUILLE' },
   { src: '/destinos/aramumuru.jpg', title: 'PORTAL DE ARAMU-MURU' },
   { src: '/destinos/cosmologia.jpeg', title: 'COSMOLOGÍA ANDINA' },

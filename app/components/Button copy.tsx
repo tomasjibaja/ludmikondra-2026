@@ -1,7 +1,11 @@
 'use client';
+import React, { ReactNode } from "react";
 
-interface ChildProps {
-  text: string; 
+interface ComponentWithChildrenProps {
+  // Option 1: Use ReactNode
+  children: ReactNode; 
+  // Option 2: Use React.ReactNode
+  // children: React.ReactNode; 
   variant?: string;
 }
 
@@ -11,7 +15,7 @@ interface ChildProps {
     'dark': 'bg-leaf-green text-creamy hover:text-leaf-green hover:bg-creamy'
   }
 
-const Button = ({ text, variant }: ChildProps) => {
+const Button: React.FC<ComponentWithChildrenProps> = ({ children, variant }) => {
 
   let styles = '';
 
@@ -28,9 +32,9 @@ const Button = ({ text, variant }: ChildProps) => {
   return (
     <button 
       onClick={() => alert('Hiciste click')}
-      className={`px-5 py-2 rounded-4xl lg:text-xl font-medium duration-200 hover:cursor-pointer ${styles}`}
+      className={`px-4 py-2 rounded-4xl text-xl font-medium duration-200 hover:cursor-pointer ${styles}`}
     >
-      {text}
+      {children}
     </button>
   )
 }

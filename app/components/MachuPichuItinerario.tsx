@@ -1,15 +1,16 @@
 import destinos from '../data/destinos'
+import Button from './Button'
 
 export default function MachuPichuItinerario () {
   return (
-    <div className="text-white bg-leaf-green flex flex-col items-center justify-center pt-20 mt-0">
-      <h2 className="font-bold text-4xl">
+    <div className="text-white bg-leaf-green flex flex-col items-center justify-center py-20 mt-0">
+      <h2 className="font-bold xl:text-4xl lg:text-3xl text-2xl max-w-4/5 text-center">
         DESTINOS Y EXPERIENCIAS
       </h2>
-      <span className="text-xl">
+      <span className="xl:text-xl lg:text-lg sm:text-md">
         Estos son los lugares que recorreremos
       </span>
-      <div className="grid grid-cols-5 gap-7 p-20">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-3 gap-7 px-20 py-10">
         {destinos.map((destino, index) => {
           return (
             <div className="h-65 flex flex-col items-center justify-between" key={index}>
@@ -21,6 +22,7 @@ export default function MachuPichuItinerario () {
           )
         })}
       </div>
+      <Button text='DESCARGAR PDF' variant='lima' />
     </div>
   )
 }
