@@ -1,7 +1,7 @@
-import Button from './components/Button';
 import MachuPichuHero from './components/MachuPichuHero';
 import MachuPichuInfo from './components/MachuPichuInfo';
 import MachuPichuCarrousel from './components/MachuPichuCarrousel';
+import MachuPichuItinerario from './components/MachuPichuItinerario';
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <MachuPichuHero />
       <MachuPichuInfo />
       <MachuPichuCarrousel />
+      <MachuPichuItinerario />
     </div>
   );
 }
