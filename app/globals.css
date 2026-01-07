@@ -13,6 +13,7 @@
   --color-creamy: #fff7e8;
   --color-pinky: #ffefff;
   --color-lavanda: #c493ff;
+  --color-lavanda-dark: #8c60c2;
   --color-lima: #c1ff72;
   --color-lima-light: #e2f8c3;
   --color-dark-green: #184a57;
@@ -26,7 +27,6 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --color-lima-light: #e2f8c3;
   }
 }
 

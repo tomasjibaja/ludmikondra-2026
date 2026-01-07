@@ -1,11 +1,11 @@
 export default function MachuPichuInfo () {
   return (
     <div className="flex items-center justify-center bg-white overflow-hidden border-b-2 border-dark-green">
-      <div className="h-full hidden lg:inline">
+      <div className="hidden lg:inline">
         <img className="object-contain" src='./machu-lu2-cropped.jpg' alt='machu-pichu' />
       </div>
-      <div className="relative flex flex-col items-center justify-center md:gap-4 gap-2 px-20 py-10 text-leaf-green lg:text-md text-sm">
-        <h3 className="font-bold md:text-2xl text-xl mb-10">EL LLAMADO DE LA TIERRA</h3>
+      <div className="relative flex flex-col items-center justify-center md:gap-4 gap-2 px-20 py-10 text-leaf-green lg:text-lg md:text-md sm:text-sm ">
+        <h3 className="font-bold md:text-2xl text-xl mb-10 text-left">EL LLAMADO DE LA TIERRA</h3>
         <b>En lo alto de las montañas sagradas, donde la Tierra late con fuerza ancestral y el tiempo parece detenerse, se abre un portal de reconexión profunda. </b>
         <p><b>Al caminar por tierras andinas, volvemos al origen</b>. 
         Permitimos que la energía de la Pachamama nos sostenga, limpie y recuerde quienes somos. Cada paso, cada silencio, cada respiración en estas montañas despierta <b>memorias antiguas y una sabiduría que habita en nosotros</b>.</p>
