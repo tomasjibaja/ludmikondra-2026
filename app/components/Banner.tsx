@@ -6,7 +6,7 @@ interface ChildProps {
 
 const Banner = ({ src }: ChildProps) => {
   return (
-    <div className="h-120 max-w-screen overflow-hidden">
+    <div className="md:h-120 h-70 max-w-screen overflow-hidden">
         <img className="lg:w-full object-cover" src={`${src}`} alt="banner img"/>
     </div>
   )
