@@ -1,5 +1,5 @@
-import React from 'react'
 import { BsBookmarkCheckFill } from "react-icons/bs";
+import Button from './Button';
 
 const MachuPichuHook = () => {
   return (
@@ -24,6 +24,7 @@ const MachuPichuHook = () => {
           <p className='font-medium lg:text-lg md:text-md sm:text-sm'>Estuve en tu lugar queriendo viajar, sin tener con quien, pero con ganas de compartir. Ese deseo me fue llevando a crear estos espacios para cumplir nuestros sueños y hacerlo juntas, de la mano, en tribu.</p>
         </div>
       </div>
+      <Button text='ME SUMO!' variant='dark'/>
     </div>
   )
 }

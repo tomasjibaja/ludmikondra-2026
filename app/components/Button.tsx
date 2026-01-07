@@ -3,15 +3,22 @@
 interface ChildProps {
   text: string; 
   variant?: string;
+  action?: string;
 }
 
-  const variants = {
-    'lavanda': 'bg-lavanda text-creamy hover:(text-lavanda bg-creamy)',
-    'lima': 'bg-lima text-dark-green',
-    'dark': 'bg-leaf-green text-creamy hover:text-leaf-green hover:bg-creamy'
-  }
+const variants = {
+  'lavanda': 'bg-lavanda text-creamy hover:(text-lavanda bg-creamy)',
+  'lima': 'bg-lima text-dark-green',
+  'dark': 'bg-leaf-green text-creamy hover:text-leaf-green hover:bg-creamy'
+}
 
-const Button = ({ text, variant }: ChildProps) => {
+const actions = {
+  'lavanda': 'bg-lavanda text-creamy hover:(text-lavanda bg-creamy)',
+  'lima': 'bg-lima text-dark-green',
+  'dark': 'bg-leaf-green text-creamy hover:text-leaf-green hover:bg-creamy'
+}
+
+const Button = ({ text, variant, action }: ChildProps) => {
 
   let styles = '';
 
@@ -25,10 +32,20 @@ const Button = ({ text, variant }: ChildProps) => {
     styles = 'bg-white text-black hover:text-white hover:bg-black';
   }
 
+  if (action === 'pdf') {
+    const cta = () => alert('Hiciste click');
+  } else if (action === 'scroll') {
+    const cta = () => alert('Hiciste click');
+  } else if (action === 'llamada') {
+    const cta = () => alert('Hiciste click');
+  } else {
+    const cta = () => alert('Hiciste click');
+  }
+
   return (
     <button 
       onClick={() => alert('Hiciste click')}
-      className={`px-5 py-2 rounded-4xl lg:text-xl font-medium duration-200 hover:cursor-pointer my-5 ${styles}`}
+      className={`px-5 py-2 rounded-md lg:text-xl font-medium duration-200 hover:cursor-pointer my-5 shadow-md ${styles}`}
     >
       {text}
     </button>
