@@ -16,7 +16,7 @@ export default function Home() {
         <span className="lg:text-2xl md:text-lg sm:text-md text-sm font-bold text-white text-shadow-lg bg-leaf-green px-2 mt-4">23 DE AGOSTO AL 4 DE SEPTIEMBRE 2026</span>
       </div>
       <div className="w-screen px-4 py-6 bg-lima absolute bottom-0 flex items-center justify-evenly flex-col gap-4">
-        <span className="max-w-2/3 text-dark-green text-center lg:text-xl text-sm">Viví un viaje para mujeres que buscan conectar con la sanación de la naturaleza</span>
+        <span className="max-w-2/3 text-dark-green text-center lg:text-xl text-sm">Las memorias sagradas de los Andes encienden tu alma en una experiencia transformadora que viviremos en tribu de mujeres. Viví un viaje para mujeres que buscan conectar con la sanación de la naturaleza</span>
         <Button text='DESCARGAR PDF' variant={'dark'} />
       </div>
     </div>
