@@ -20,7 +20,7 @@ export default function MachuPichuItinerario () {
           )
         })}
       </div>
-      <Button text='DESCARGAR ITINERARIO' variant='lima' onClick={() => alert('hiciste click')} />
+      <Button text='DESCARGAR ITINERARIO' variant='lima' onClick={() => window.open('./p_data/MachuPichu-AGOSTO-26.pdf', '_blank')} />
     </div>
   )
 }

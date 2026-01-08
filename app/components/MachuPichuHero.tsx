@@ -18,7 +18,7 @@ export default function Home() {
       </div>
       <div className="w-screen px-4 py-6 bg-lima absolute bottom-0 flex items-center justify-evenly flex-col gap-4">
         <span className="max-w-2/3 text-dark-green text-center lg:text-xl text-md font-bold">Las memorias sagradas de los Andes encienden tu alma en una experiencia transformadora que viviremos en tribu de mujeres</span>
-        <Button text='DESCARGAR ITINERARIO' variant={'dark'} onClick={() => alert('hiciste click')} />
+        <Button text='DESCARGAR ITINERARIO' variant={'dark'} onClick={() => window.open('./p_data/MachuPichu-AGOSTO-26.pdf', '_blank')} />
       </div>
     </div>
   );
