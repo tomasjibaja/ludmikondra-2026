@@ -7,6 +7,7 @@ import MachuPichuHook from './components/MachuPichuHook';
 import Banner from './components/Banner';
 import MachuPichuPrecio from './components/MachuPichuPrecio';
 import WAButton from './components/WAButton';
+import ModalForm from './components/ModalForm';
 
 export default function Home() {
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Banner src='./machu-pichu-ciudad.jpg' />
       <MachuPichuHook />
       <MachuPichuPrecio />
+      <ModalForm />
     </div>
   );
 }
