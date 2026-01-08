@@ -1,3 +1,4 @@
+'use client'
 import destinos from '../data/destinos'
 import Button from './Button'
 
@@ -5,11 +6,8 @@ export default function MachuPichuItinerario () {
   return (
     <div className="text-white bg-leaf-green flex flex-col items-center justify-center pt-10 pb-20 mt-0">
       <h2 className="font-bold xl:text-4xl lg:text-3xl text-2xl max-w-4/5 text-center my-10">
-        DESTINOS Y EXPERIENCIAS
+        VAMOS A CONOCER Y EXPERIMENTAR
       </h2>
-      <span className="xl:text-xl lg:text-lg sm:text-md">
-        Estos son los lugares que recorreremos
-      </span>
       <div className="grid xl:grid-cols-5 lg:grid-cols-3 gap-7 px-20 py-10">
         {destinos.map((destino, index) => {
           return (
@@ -22,7 +20,7 @@ export default function MachuPichuItinerario () {
           )
         })}
       </div>
-      <Button text='DESCARGAR PDF' variant='lima' />
+      <Button text='DESCARGAR ITINERARIO' variant='lima' onClick={() => alert('hiciste click')} />
     </div>
   )
 }

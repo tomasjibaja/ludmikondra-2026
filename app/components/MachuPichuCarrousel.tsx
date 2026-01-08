@@ -17,9 +17,9 @@ export default function MachuPichuCarrousel () {
         }
       </Carousel>
       <div className="w-full bg-lima h-50 flex items-center justify-evenly flex-col">
-        <span className="text-dark-green text-center lg:text-xl max-w-4/5 font-medium">
-          Este es un viaje de poder para mujeres que sienten el llamado.<br /><br />
-          Una experiencia de activación interior en uno de los centros energéticos más poderosos del planeta.
+        <span className="text-dark-green text-center lg:text-xl max-w-4/5 font-bold">
+          " Este es un viaje de poder para mujeres que sienten el llamado.<br />
+          Una experiencia de activación interior en uno de los centros energéticos más poderosos del planeta "
         </span>
       </div>
     </div>

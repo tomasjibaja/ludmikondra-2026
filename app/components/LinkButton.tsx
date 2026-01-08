@@ -1,9 +1,10 @@
 'use client';
+import Link from "next/link";
 
 interface ChildProps {
   text: string; 
   variant?: string;
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  link: string
 }
 
 const variants = {
@@ -12,11 +13,9 @@ const variants = {
   'dark': 'bg-leaf-green text-creamy hover:text-leaf-green hover:bg-creamy'
 }
 
-const Button = ({ text, variant, onClick }: ChildProps) => {
+const Button = ({ text, variant, link }: ChildProps) => {
 
   let styles = '';
-
-  const openWA = () => {window.open('https://wa.link/6065w0', '_blank')}
 
   if (variant === 'lavanda') {
     styles = 'bg-lavanda text-white hover:text-lavanda hover:bg-white';
@@ -29,11 +28,12 @@ const Button = ({ text, variant, onClick }: ChildProps) => {
   }
 
   return (
-    <button 
-      onClick={onClick}
+    <button
       className={`px-5 py-2 rounded-md lg:text-xl font-medium duration-200 hover:cursor-pointer my-5 shadow-md ${styles}`}
     >
-      {text}
+      <Link href={link}>
+        {text}
+      </Link>
     </button>
   )
 }
